@@ -19,6 +19,7 @@ d <- ggplot(df, aes(x = dv, fill = group)) +
   geom_density(alpha = 0.4) +
   xlab("Score") +
   ylab("") +
+  ylim(c(0,1)) +
   ggtitle(substitute(gTitle)) +
   scale_fill_manual(values = c("forestgreen", "purple1", "blue"), breaks = c("Prior/Expectancy", "Likelihood/Sensory Data", "Posterior/Perception")) +
   scale_y_continuous(breaks=NULL) +
